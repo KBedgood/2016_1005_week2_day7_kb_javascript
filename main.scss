@@ -185,8 +185,11 @@ body .container .row3 {
             position: relative;
 }
 
-.icon:hover {
+.icon:hover, .icon.active {
             background-color: $blue;
+            i {
+                  color: white;
+            }
 }
 
 .icon4 > i:hover {

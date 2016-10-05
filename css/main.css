@@ -164,8 +164,10 @@ body .container .row3 {
 .icon4 {
   position: relative; }
 
-.icon:hover {
+.icon:hover, .icon.active {
   background-color: #5ca3d6; }
+  .icon:hover i, .icon.active i {
+    color: white; }
 
 .icon4 > i:hover {
   color: white !important; }

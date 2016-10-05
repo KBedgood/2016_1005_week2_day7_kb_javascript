@@ -3,18 +3,29 @@ var subTotal = 0;
 var blueCartButton = document.getElementById("buyBlue");
 var costBox = document.getElementById("cost");
 var isBlueInCart = false
+var withTax = document.getElementById("total");
+
+
+function updateCart (){
+	var total = subTotal * .065 + subTotal;
+	costBox.innerHTML = subTotal;
+	withTax.innerHTML = total;
+}
 
 blueCartButton.addEventListener("click", function(){
 
 	if (isBlueInCart === false){
 		subTotal = subTotal + 20;
-		costBox.innerHTML = subTotal;
+		updateCart();
 		isBlueInCart = true;
+		blueCartButton.className = "active icon icon5";
+
 	}
 	else {
 		subTotal = subTotal - 20;
-		costBox.innerHTML = subTotal;
+		updateCart();
 		isBlueInCart = false;
+		blueCartButton.className = "icon icon5";
 	}
 });
 
@@ -28,12 +39,12 @@ pinkCartButton.addEventListener("click", function(){
 
 	if (isPinkInCart === false){
 		subTotal = subTotal + 25;
-		costBox.innerHTML = subTotal;
+		updateCart();
 		isPinkInCart = true;
 	}
 	else {
 		subTotal = subTotal - 25;
-		costBox.innerHTML = subTotal;
+		updateCart();
 		isPinkInCart = false;
 	}
 });
@@ -48,12 +59,13 @@ orangeCartButton.addEventListener("click", function(){
 
 	if (isOrangeInCart === false){
 		subTotal = subTotal + 30;
-		costBox.innerHTML = subTotal;
+		updateCart();
 		isOrangeInCart = true;
 	}
 	else {
 		subTotal = subTotal - 30;
-		costBox.innerHTML = subTotal;
+		updateCart();
 		isOrangeInCart = false;
 	}
 });
+
