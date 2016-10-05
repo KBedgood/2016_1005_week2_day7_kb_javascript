@@ -1,0 +1,253 @@
+* {
+            box-sizing: border-box;
+}
+
+
+
+/*SASS Variable*/
+$blue: #5ca3d6;
+$iconFontSize: 40px;
+@import "mixins";
+body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.4em;
+      }
+
+body .conatainer {
+            max-width: 990px;
+            margin: 0px auto;
+      }
+
+body .container .row1,
+body .container .row2,
+body .container .row3 {
+            width: 33%;
+            display: inline-block;
+            padding: 20px;
+}
+
+.floater {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-left: 3px solid $blue;
+            border-bottom: 3px solid $blue;
+}
+
+.floater:hover {
+            background-color: $blue;
+}
+
+.floater i:hover {
+            color: white !important;
+}
+
+.tee1,
+.tee2,
+.tee3 {
+            border: 3px solid $blue;
+            padding: (15px+15px);
+            background-color: transparent;
+            position: relative;
+}
+
+.shop {
+            border-left: 3px solid $blue;
+            border-right: 3px solid $blue;
+            border-bottom: 3px solid $blue;
+            max-width: 100%;
+            height: 30px;
+            background-color: transparent;
+            font-size: 0px;
+            .sizeMenu {
+                        position: absolute;
+                        top: -176px;
+                        left: 1px;
+                        background-color: white;
+                        @include border();
+                        padding: 6px;
+                        display: none;
+            }
+            .triangle {
+                        @include triangle();
+                        left: 20px;
+                        top: 169px;
+            }
+            .triangle2 {
+                        @include triangle();
+                        bottom: -7px;
+                        left: 53px;
+            }
+}
+
+.icon:hover > i {
+            color: white;
+}
+
+.icon3:hover .sizeMenu {
+            display: block;
+}
+
+.icon4:hover .colorMenu {
+            display: block;
+}
+
+.sizeMenu img {
+            margin: 0 auto;
+            display: block;
+}
+
+.icon4 .colorMenu {
+            position: absolute;
+            top: -130px;
+            left: -31px;
+            background-color: white;
+            @include border();
+            padding: 7px;
+            width: 135px;
+            text-align: center;
+            display: none;
+}
+
+.colorMenu img {
+            margin: 0 auto;
+            display: block;
+}
+
+.Menu1,
+.Menu2,
+.Menu3,
+.Menu4 {
+            display: inline-block;
+            margin: 5px;
+}
+
+.Menu1 .fa {
+            color: $blue;
+            font-size: $iconFontSize;
+}
+
+.Menu2 .fa {
+            color: #D482AA;
+            font-size: $iconFontSize;
+}
+
+.Menu3 .fa {
+            color: #DCB07D;
+            font-size: $iconFontSize;
+}
+
+.Menu4 .fa {
+            color: #33CC99;
+            font-size: $iconFontSize;
+}
+
+.teeBlue,
+.teePink,
+.teeOrange {
+            width: 100%;
+}
+
+.cost h3 {
+            font-size: 16px;
+            color: $blue;
+            margin-top: 10px;
+            float: left;
+}
+
+.cost .price {
+            font-size: 18px;
+            color: $blue;
+            display: inline;
+            float: right;
+            font-weight: bold;
+}
+
+.fa {
+            color: $blue;
+            text-align: center;
+            display: block;
+            padding-top: 5px;
+}
+
+.icon {
+            height: 30px;
+            width: 20%;
+            border-right: 3px solid $blue;
+            display: inline-block;
+            font-size: 14px;
+}
+
+.icon3,
+.icon4 {
+            position: relative;
+}
+
+.icon:hover {
+            background-color: $blue;
+}
+
+.icon4 > i:hover {
+            color: white !important;
+}
+
+.icon5 {
+            border-right: 0;
+}
+
+.footer {
+            @include footer();
+}
+
+.shoppingCart {
+width: 471px;
+height: 200px;
+border: 3px solid $blue;
+background-color: lighten($blue, 35);
+padding: (15px+15px);
+@include center();
+margin-top: 48px;
+
+div {
+      width:   100%;
+}
+}
+
+.shoppingCart h3{
+      display: inline-block;
+      font-size: 14px; 
+      color: $blue;
+      position: relative;
+      z-index: 50;
+      text-align: left !important;
+}
+
+
+
+
+
+@media (max-width: 990px) {
+            .row1,
+            .row2,
+            .row3 {
+                        width: 100% !important;
+            }
+            .sizeMenu {
+                        top: -197px;
+                        left: 0px;
+                        position: relative;
+            }
+            .icon4 .colorMenu {
+                        left: -36.5px;
+                        top: -433%;
+            }
+            .triangle {
+                        left: 18.5px;
+                        top: 169px;
+            }
+            .triangle2 {
+                        left: 54px;
+            }
+}
