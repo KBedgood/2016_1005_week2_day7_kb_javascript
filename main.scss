@@ -205,17 +205,28 @@ body .container .row3 {
 }
 
 .shoppingCart {
-width: 471px;
+width: 371px;
 height: 200px;
 border: 3px solid $blue;
 background-color: lighten($blue, 35);
-padding: (15px+15px);
+padding: (38px);
 @include center();
 margin-top: 48px;
 
 div {
       width:   100%;
 }
+
+h3 {
+      font-size: 14px;
+      font-weight: bold;
+      padding: 4px;
+}
+
+.finalCost {
+      font-size: 38px;
+}
+
 }
 
 .shoppingCart h3{

@@ -41,11 +41,13 @@ pinkCartButton.addEventListener("click", function(){
 		subTotal = subTotal + 25;
 		updateCart();
 		isPinkInCart = true;
+		pinkCartButton.className = "active icon icon5";
 	}
 	else {
 		subTotal = subTotal - 25;
 		updateCart();
 		isPinkInCart = false;
+		pinkCartButton.className = "icon icon5";
 	}
 });
 
@@ -61,11 +63,13 @@ orangeCartButton.addEventListener("click", function(){
 		subTotal = subTotal + 30;
 		updateCart();
 		isOrangeInCart = true;
+		orangeCartButton.className = "active icon icon5";
 	}
 	else {
 		subTotal = subTotal - 30;
 		updateCart();
 		isOrangeInCart = false;
+		orangeCartButton.className = "icon icon5"
 	}
 });
 
