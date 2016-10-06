@@ -64,7 +64,7 @@ body .container .row3 {
             .sizeMenu {
                         position: absolute;
                         top: -176px;
-                        left: 1px;
+                        left: 13px;
                         background-color: white;
                         @include border();
                         padding: 6px;
@@ -90,26 +90,33 @@ body .container .row3 {
             display: block;
 }
 
-.icon4:hover .colorMenu {
-            display: block;
-}
+
 
 .sizeMenu img {
             margin: 0 auto;
             display: block;
 }
 
+.icon4:hover .colorMenu {
+            display: block;
+}
+
+.colorMenu:hover {
+display: block;
+}
+
+
 .icon4 .colorMenu {
+            display: hidden;
             position: absolute;
             top: -130px;
-            left: -31px;
+            left: -19px;
             background-color: white;
             @include border();
             padding: 7px;
             width: 135px;
             text-align: center;
-            display: none;
-}
+      }
 
 .colorMenu img {
             margin: 0 auto;
@@ -122,11 +129,13 @@ body .container .row3 {
 .Menu4 {
             display: inline-block;
             margin: 5px;
+            font-size: $iconFontSize;
 }
 
-.Menu1 .fa {
+.Menu1 .fastop {
             color: $blue;
-            font-size: $iconFontSize;
+            font-size: $iconFontSize !important;
+            z-index: 5000;
 }
 
 .Menu2 .fa {
@@ -143,6 +152,8 @@ body .container .row3 {
             color: #33CC99;
             font-size: $iconFontSize;
 }
+
+
 
 .teeBlue,
 .teePink,
@@ -247,6 +258,18 @@ h3 {
             .row2,
             .row3 {
                         width: 100% !important;
+            }
+            .shop .sizeMenu{
+                  top: -178px;
+                  left: 45px;
+            }
+
+            .icon4 .colorMenu {
+                  left: 11.5px !important;
+            }
+
+            .icon icon3 {
+                  left: 29px;
             }
             .sizeMenu {
                         top: -197px;

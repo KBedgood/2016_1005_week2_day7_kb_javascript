@@ -54,7 +54,7 @@ body .container .row3 {
   .shop .sizeMenu {
     position: absolute;
     top: -176px;
-    left: 1px;
+    left: 13px;
     background-color: white;
     border: 3px solid #5ca3d6;
     padding: 6px;
@@ -84,23 +84,26 @@ body .container .row3 {
 .icon3:hover .sizeMenu {
   display: block; }
 
-.icon4:hover .colorMenu {
-  display: block; }
-
 .sizeMenu img {
   margin: 0 auto;
   display: block; }
 
+.icon4:hover .colorMenu {
+  display: block; }
+
+.colorMenu:hover {
+  display: block; }
+
 .icon4 .colorMenu {
+  display: hidden;
   position: absolute;
   top: -130px;
-  left: -31px;
+  left: -19px;
   background-color: white;
   border: 3px solid #5ca3d6;
   padding: 7px;
   width: 135px;
-  text-align: center;
-  display: none; }
+  text-align: center; }
 
 .colorMenu img {
   margin: 0 auto;
@@ -111,11 +114,13 @@ body .container .row3 {
 .Menu3,
 .Menu4 {
   display: inline-block;
-  margin: 5px; }
-
-.Menu1 .fa {
-  color: #5ca3d6;
+  margin: 5px;
   font-size: 40px; }
+
+.Menu1 .fastop {
+  color: #5ca3d6;
+  font-size: 40px !important;
+  z-index: 5000; }
 
 .Menu2 .fa {
   color: #D482AA;
@@ -212,6 +217,13 @@ body .container .row3 {
   .row2,
   .row3 {
     width: 100% !important; }
+  .shop .sizeMenu {
+    top: -178px;
+    left: 45px; }
+  .icon4 .colorMenu {
+    left: 11.5px !important; }
+  .icon icon3 {
+    left: 29px; }
   .sizeMenu {
     top: -197px;
     left: 0px;
