@@ -107,7 +107,7 @@ display: block;
 
 
 .icon4 .colorMenu {
-            display: hidden;
+            display: none;
             position: absolute;
             top: -130px;
             left: -19px;
@@ -198,9 +198,10 @@ display: block;
 
 .icon:hover, .icon.active {
             background-color: $blue;
-            i {
-                  color: white;
-            }
+}
+
+.icon.active i {
+      color:white;
 }
 
 .icon4 > i:hover {
