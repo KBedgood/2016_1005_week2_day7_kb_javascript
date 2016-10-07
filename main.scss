@@ -3,20 +3,20 @@
 }
 
 
-
 /*SASS Variable*/
+
 $blue: #5ca3d6;
 $iconFontSize: 40px;
 @import "mixins";
 body {
             font-family: 'Lato', sans-serif;
             line-height: 1.4em;
-      }
+}
 
 body .conatainer {
             max-width: 990px;
             margin: 0px auto;
-      }
+}
 
 body .container .row1,
 body .container .row2,
@@ -62,18 +62,19 @@ body .container .row3 {
             background-color: transparent;
             font-size: 0px;
             .sizeMenu {
-                        position: absolute;
-                        top: -176px;
-                        left: 13px;
-                        background-color: white;
-                        @include border();
-                        padding: 6px;
-                        display: none;
+         position: absolute;
+    top: -200px;
+    left: 40px;
+    background-color: white;
+    border: 3px solid #5ca3d6;
+    padding: 20px;
+    height: 200px;
+    width: 100px;
             }
             .triangle {
                         @include triangle();
-                        left: 20px;
-                        top: 169px;
+                    left: 36px;
+    top: 193px;
             }
             .triangle2 {
                         @include triangle();
@@ -90,8 +91,6 @@ body .container .row3 {
             display: block;
 }
 
-
-
 .sizeMenu img {
             margin: 0 auto;
             display: block;
@@ -102,9 +101,8 @@ body .container .row3 {
 }
 
 .colorMenu:hover {
-display: block;
+            display: block;
 }
-
 
 .icon4 .colorMenu {
             display: none;
@@ -116,7 +114,7 @@ display: block;
             padding: 7px;
             width: 135px;
             text-align: center;
-      }
+}
 
 .colorMenu img {
             margin: 0 auto;
@@ -152,8 +150,6 @@ display: block;
             color: #33CC99;
             font-size: $iconFontSize;
 }
-
-
 
 .teeBlue,
 .teePink,
@@ -196,12 +192,13 @@ display: block;
             position: relative;
 }
 
-.icon:hover, .icon.active {
+.icon:hover,
+.icon.active {
             background-color: $blue;
 }
 
 .icon.active i {
-      color:white;
+            color: white;
 }
 
 .icon4 > i:hover {
@@ -216,41 +213,71 @@ display: block;
             @include footer();
 }
 
+.selections  {
+    display: inline-block;
+    width: 600px;
+    height: 244px;
+    border: 3px solid #5ca3d6;
+    background-color: #ebf4fa;
+    padding: 38px;
+    margin-top: 48px;
+    margin-left: 200px;
+    color: #5ca3d6;
+    vertical-align: top;
+    margin-right: 37px;
+   }
+
+   #cart{
+          display: block;
+          font-size: 14px;
+    font-weight: bold;
+    padding: 4px;
+   }
+
 .shoppingCart {
-width: 371px;
-height: 200px;
-border: 3px solid $blue;
-background-color: lighten($blue, 35);
-padding: (38px);
-@include center();
-margin-top: 48px;
+            display: inline-block;
+            width: 600px;
+            height: 244px;
+            border: 3px solid $blue;
+            background-color: lighten($blue, 35);
+            padding: (38px);
+            @include center();
+            margin-top: 48px;
+            color: $blue;
+            vertical-align: top;
+
+}
+
+
 
 div {
-      width:   100%;
+            width: 100%;
 }
 
 h3 {
-      font-size: 14px;
-      font-weight: bold;
-      padding: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 4px;
 }
+
 
 .finalCost {
-      font-size: 38px;
+      font-size: 24px;
 }
 
+#itemsInCart {
+            h1 {
+                        display: inline-block;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #5ca3d6;
+                        position: relative;
+                        z-index: 50;
+                        text-align: left !important;
+                        padding: 4px;
+                        padding-bottom: 23px;
+            }
 }
-
-.shoppingCart h3{
-      display: inline-block;
-      font-size: 14px; 
-      color: $blue;
-      position: relative;
-      z-index: 50;
-      text-align: left !important;
-}
-
-
 
 
 
@@ -260,17 +287,15 @@ h3 {
             .row3 {
                         width: 100% !important;
             }
-            .shop .sizeMenu{
-                  top: -178px;
-                  left: 45px;
+            .shop .sizeMenu {
+                        top: -178px;
+                        left: 45px;
             }
-
             .icon4 .colorMenu {
-                  left: 11.5px !important;
+                        left: 11.5px !important;
             }
-
             .icon icon3 {
-                  left: 29px;
+                        left: 29px;
             }
             .sizeMenu {
                         top: -197px;

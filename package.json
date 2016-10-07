@@ -21,5 +21,8 @@
     "browser-sync": "^2.17.0",
     "gulp": "^3.9.1",
     "sync": "^0.2.5"
+  },
+  "dependencies": {
+    "moment": "^2.15.1"
   }
 }

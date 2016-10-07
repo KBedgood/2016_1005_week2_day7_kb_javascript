@@ -53,12 +53,13 @@ body .container .row3 {
   font-size: 0px; }
   .shop .sizeMenu {
     position: absolute;
-    top: -176px;
-    left: 13px;
+    top: -200px;
+    left: 40px;
     background-color: white;
     border: 3px solid #5ca3d6;
-    padding: 6px;
-    display: none; }
+    padding: 20px;
+    height: 200px;
+    width: 100px; }
   .shop .triangle {
     border-top: 10px solid white;
     width: 0px;
@@ -66,8 +67,8 @@ body .container .row3 {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     position: absolute;
-    left: 20px;
-    top: 169px; }
+    left: 36px;
+    top: 193px; }
   .shop .triangle2 {
     border-top: 10px solid white;
     width: 0px;
@@ -169,7 +170,8 @@ body .container .row3 {
 .icon4 {
   position: relative; }
 
-.icon:hover, .icon.active {
+.icon:hover,
+.icon.active {
   background-color: #5ca3d6; }
 
 .icon.active i {
@@ -188,30 +190,58 @@ body .container .row3 {
   color: grey;
   text-align: center; }
 
+.selections {
+  display: inline-block;
+  width: 600px;
+  height: 244px;
+  border: 3px solid #5ca3d6;
+  background-color: #ebf4fa;
+  padding: 38px;
+  margin-top: 48px;
+  margin-left: 200px;
+  color: #5ca3d6;
+  vertical-align: top;
+  margin-right: 37px; }
+
+#cart {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px; }
+
 .shoppingCart {
-  width: 371px;
-  height: 200px;
+  display: inline-block;
+  width: 600px;
+  height: 244px;
   border: 3px solid #5ca3d6;
   background-color: #ebf4fa;
   padding: 38px;
   margin: 0px auto;
-  margin-top: 48px; }
-  .shoppingCart div {
-    width: 100%; }
-  .shoppingCart h3 {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 4px; }
-  .shoppingCart .finalCost {
-    font-size: 38px; }
+  margin-top: 48px;
+  color: #5ca3d6;
+  vertical-align: top; }
 
-.shoppingCart h3 {
-  display: inline-block;
+div {
+  width: 100%; }
+
+h3 {
   font-size: 14px;
+  font-weight: bold;
+  padding: 4px; }
+
+.finalCost {
+  font-size: 24px; }
+
+#itemsInCart h1 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
   color: #5ca3d6;
   position: relative;
   z-index: 50;
-  text-align: left !important; }
+  text-align: left !important;
+  padding: 4px;
+  padding-bottom: 23px; }
 
 @media (max-width: 990px) {
   .row1,
