@@ -62,19 +62,21 @@ body .container .row3 {
             background-color: transparent;
             font-size: 0px;
             .sizeMenu {
-         position: absolute;
-    top: -200px;
-    left: 40px;
-    background-color: white;
-    border: 3px solid #5ca3d6;
-    padding: 20px;
-    height: 200px;
-    width: 100px;
+                        display: none;
+                        position: absolute;
+                        top: -200px;
+                        left: 42px;
+                        background-color: white;
+                        border: 3px solid #5ca3d6;
+                        padding: 20px;
+                        height: 200px;
+                        width: 100px;
+                        transform: translate(-50%, 0%);
             }
             .triangle {
                         @include triangle();
-                    left: 36px;
-    top: 193px;
+                        left: 36px;
+                        top: 193px;
             }
             .triangle2 {
                         @include triangle();
@@ -107,13 +109,14 @@ body .container .row3 {
 .icon4 .colorMenu {
             display: none;
             position: absolute;
-            top: -130px;
-            left: -19px;
+            top: -131px;
+            left: 50%;
             background-color: white;
-            @include border();
+            border: 3px solid #5ca3d6;
             padding: 7px;
             width: 135px;
             text-align: center;
+            transform: translate(-50%, 0%);
 }
 
 .colorMenu img {
@@ -128,6 +131,7 @@ body .container .row3 {
             display: inline-block;
             margin: 5px;
             font-size: $iconFontSize;
+            width: 30px;
 }
 
 .Menu1 .fastop {
@@ -213,42 +217,37 @@ body .container .row3 {
             @include footer();
 }
 
-.selections  {
-    display: inline-block;
-    width: 600px;
-    height: 244px;
-    border: 3px solid #5ca3d6;
-    background-color: #ebf4fa;
-    padding: 38px;
-    margin-top: 48px;
-    margin-left: 200px;
-    color: #5ca3d6;
-    vertical-align: top;
-    margin-right: 37px;
-   }
+.selections {
+            display: inline-block;
+            width: 35%;
+            border: 3px solid #5ca3d6;
+            background-color: #ebf4fa;
+            padding: 38px;
+            margin-top: 48px;
+            color: #5ca3d6;
+            vertical-align: top;
+            margin-right: 37px;
+}
 
-   #cart{
-          display: block;
-          font-size: 14px;
-    font-weight: bold;
-    padding: 4px;
-   }
+#cart {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 4px;
+}
 
 .shoppingCart {
             display: inline-block;
-            width: 600px;
-            height: 244px;
-            border: 3px solid $blue;
-            background-color: lighten($blue, 35);
-            padding: (38px);
-            @include center();
+            width: 25%;
+            border: 3px solid #5ca3d6;
+            background-color: #ebf4fa;
+            padding: 38px;
             margin-top: 48px;
-            color: $blue;
+            color: #5ca3d6;
             vertical-align: top;
-
+            margin-left: 10%;
+            margin-right: 25px;
 }
-
-
 
 div {
             width: 100%;
@@ -260,9 +259,8 @@ h3 {
             padding: 4px;
 }
 
-
 .finalCost {
-      font-size: 24px;
+            font-size: 24px;
 }
 
 #itemsInCart {
@@ -279,7 +277,19 @@ h3 {
             }
 }
 
+#itemsInCart,
+#priceInfo {
+            display: inline-block !important;
+}
 
+.cartGraphic .fa-shopping-cart {
+display: inline-block;
+font-size: 44px;
+padding: 4px;
+margin-left: 3%;
+margin-top: 70px;
+position: absolute;
+}
 
 @media (max-width: 990px) {
             .row1,
@@ -287,9 +297,17 @@ h3 {
             .row3 {
                         width: 100% !important;
             }
+            .selections,
+            .shoppingCart {
+                        margin: 0px auto;
+                        width: 80%;
+                        display: block;
+                        padding: 23px;
+                        margin-bottom: 15px;
+            }
             .shop .sizeMenu {
-                        top: -178px;
-                        left: 45px;
+                        top: -200px;
+                        left: 30px;
             }
             .icon4 .colorMenu {
                         left: 11.5px !important;
@@ -307,8 +325,8 @@ h3 {
                         top: -433%;
             }
             .triangle {
-                        left: 18.5px;
-                        top: 169px;
+                        left: 36px;
+                        top: 190px;
             }
             .triangle2 {
                         left: 54px;

@@ -5,6 +5,7 @@ var costBox = document.getElementById("cost");
 var withTax = document.getElementById("total");
 var cartContents = document.getElementById("cart");
 var today = document.getElementById("demo");
+
 var cart = [];
 
 var blueShirt = {
@@ -36,11 +37,12 @@ function updateCart() {
     merchandise = "";
 
     cart.forEach(function(shirt) {
+        var shirtDate = moment(shirt.date).format("MMMM Do YYYY, h:mm: a");
         merchandise += `
 	  <div class="item">
 	  <span class="shirtName">${shirt.name}</span>
 	  <span class="shirtPrice">$ ${shirt.price.toFixed(2)}</span>
-	  <span class="dateStamp">${shirt.date}</span>
+	  <span class="dateStamp">${shirtDate}</span>
 	   </div>
 	  `;
     });
@@ -49,6 +51,7 @@ function updateCart() {
     costBox.innerHTML = subTotal.toFixed(2);
     withTax.innerHTML = total.toFixed(2);
 }
+
 
 
 blueCartButton.addEventListener("click", function() {

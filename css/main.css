@@ -52,14 +52,16 @@ body .container .row3 {
   background-color: transparent;
   font-size: 0px; }
   .shop .sizeMenu {
+    display: none;
     position: absolute;
     top: -200px;
-    left: 40px;
+    left: 42px;
     background-color: white;
     border: 3px solid #5ca3d6;
     padding: 20px;
     height: 200px;
-    width: 100px; }
+    width: 100px;
+    transform: translate(-50%, 0%); }
   .shop .triangle {
     border-top: 10px solid white;
     width: 0px;
@@ -98,13 +100,14 @@ body .container .row3 {
 .icon4 .colorMenu {
   display: none;
   position: absolute;
-  top: -130px;
-  left: -19px;
+  top: -131px;
+  left: 50%;
   background-color: white;
   border: 3px solid #5ca3d6;
   padding: 7px;
   width: 135px;
-  text-align: center; }
+  text-align: center;
+  transform: translate(-50%, 0%); }
 
 .colorMenu img {
   margin: 0 auto;
@@ -116,7 +119,8 @@ body .container .row3 {
 .Menu4 {
   display: inline-block;
   margin: 5px;
-  font-size: 40px; }
+  font-size: 40px;
+  width: 30px; }
 
 .Menu1 .fastop {
   color: #5ca3d6;
@@ -192,13 +196,11 @@ body .container .row3 {
 
 .selections {
   display: inline-block;
-  width: 600px;
-  height: 244px;
+  width: 35%;
   border: 3px solid #5ca3d6;
   background-color: #ebf4fa;
   padding: 38px;
   margin-top: 48px;
-  margin-left: 200px;
   color: #5ca3d6;
   vertical-align: top;
   margin-right: 37px; }
@@ -211,15 +213,15 @@ body .container .row3 {
 
 .shoppingCart {
   display: inline-block;
-  width: 600px;
-  height: 244px;
+  width: 25%;
   border: 3px solid #5ca3d6;
   background-color: #ebf4fa;
   padding: 38px;
-  margin: 0px auto;
   margin-top: 48px;
   color: #5ca3d6;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-left: 10%;
+  margin-right: 25px; }
 
 div {
   width: 100%; }
@@ -243,14 +245,33 @@ h3 {
   padding: 4px;
   padding-bottom: 23px; }
 
+#itemsInCart,
+#priceInfo {
+  display: inline-block !important; }
+
+.cartGraphic .fa-shopping-cart {
+  display: inline-block;
+  font-size: 44px;
+  padding: 4px;
+  margin-left: 3%;
+  margin-top: 70px;
+  position: absolute; }
+
 @media (max-width: 990px) {
   .row1,
   .row2,
   .row3 {
     width: 100% !important; }
+  .selections,
+  .shoppingCart {
+    margin: 0px auto;
+    width: 80%;
+    display: block;
+    padding: 23px;
+    margin-bottom: 15px; }
   .shop .sizeMenu {
-    top: -178px;
-    left: 45px; }
+    top: -200px;
+    left: 30px; }
   .icon4 .colorMenu {
     left: 11.5px !important; }
   .icon icon3 {
@@ -263,7 +284,7 @@ h3 {
     left: -36.5px;
     top: -433%; }
   .triangle {
-    left: 18.5px;
-    top: 169px; }
+    left: 36px;
+    top: 190px; }
   .triangle2 {
     left: 54px; } }
