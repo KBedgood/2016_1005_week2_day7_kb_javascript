@@ -6,6 +6,11 @@ var withTax = document.getElementById("total");
 var cartContents = document.getElementById("cart");
 var today = document.getElementById("demo");
 
+var cartGraphic = document.getElementById("cG");
+cartGraphic.onclick = function (){
+
+}
+
 var cart = [];
 
 var blueShirt = {
@@ -76,6 +81,7 @@ blueCartButton.addEventListener("click", function() {
 
 
 
+
 var pinkCartButton = document.getElementById("buyPink");
 var costBox = document.getElementById("cost");
 var isPinkInCart = false
@@ -121,3 +127,5 @@ orangeCartButton.addEventListener("click", function() {
         updateCart();
     }
 });
+
+

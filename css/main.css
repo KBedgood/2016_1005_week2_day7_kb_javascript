@@ -287,4 +287,12 @@ h3 {
     left: 36px;
     top: 190px; }
   .triangle2 {
-    left: 54px; } }
+    left: 54px; }
+  .cartGraphic .fa-shopping-cart {
+    margin: 0px auto;
+    display: inline-block;
+    font-size: 44px;
+    padding: 4px;
+    margin-left: 3%;
+    margin-top: 70px;
+    position: absolute; } }
